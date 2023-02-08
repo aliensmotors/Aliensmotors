@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Heading{
+ font-size: 72px;
+  background: -webkit-linear-gradient(#2ca1b0, #1b5073);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Container{
+  height: 100vh;
+ 
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  color: black;
+  visibility: hidden;
+  
+}
+
+.panel {
+  overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+.container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 5px;
+  width: 100vh;
+  margin: auto;
+  height: 50vmin;
+}
+
+.GalleryImg{
+  flex: 1;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  overflow: hidden;
+
+  filter: grayscale(100%) brightness(75%);
+
+  transition: flex 0.5s, filter 0.5s;
+
+}
+
+.GalleryImg:hover{
+  flex: 8;
+
+  filter: grayscale(0%) brightness(115%);
+}
+@media screen and (max-width: 780px) {
+    #Product-Section1 {
+        box-shadow: 0px 200px 150px 0px rgb(0, 0, 0) inset;
+    }
+    .container{
+      width: 45vh;
+    }
+
+  }

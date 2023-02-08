@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+#Product-item{
+    scroll-snap-align: start;
+    box-shadow: 450px 3px 500px 50px rgb(0, 0, 0) inset;
+}
+
+@media screen and (max-width: 780px) {
+    #Product-item{
+        scroll-snap-align: start;
+        box-shadow: 450px 3px 500px 50px rgba(0, 0, 0, 0.439) inset;
+    }
+  }
